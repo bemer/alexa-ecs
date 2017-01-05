@@ -1,5 +1,6 @@
 import boto3
 
+# This function provides a basic update to services running in a cluster.
 def lambda_handler(event, context):
 
     client = boto3.client('ecs')
