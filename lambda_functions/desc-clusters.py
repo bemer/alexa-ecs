@@ -19,4 +19,4 @@ def lambda_handler(event, context):
     clusterdesc = json.dumps(response, cls=MyEncoder)
     clusterdesc = json.loads(clusterdesc)
 
-    return clusterdesc['clusterArns']
+    return clusterdesc['clusters'][0]['clusterName']
